@@ -1,0 +1,56 @@
+.achivement-main{
+    width: 100%;
+    height: auto;
+    padding: 130px;
+background-color: #7da2a9;
+display: flex;
+justify-content: space-evenly;
+}
+
+.box1{
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    
+}
+.box1 h2{
+    font-size: 30px;
+    font-weight:100;
+    word-spacing: normal;
+}
+
+@media (max-width:768px) {
+    .achivement-main{
+        flex-direction: column;
+       gap: 90px;
+       width: 100%;
+    }
+
+    .box1 h2{
+        font-size: 20px;
+    }
+    .box1{
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+  .achivement-main {
+    padding: 100px 60px;
+    gap: 30px;
+  }
+
+  .box1 h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 400px) {
+    .achivement-main {
+      padding: 80px 20px;
+      gap: 20px;
+    }
+  
+    .box1 h2 {
+      font-size: 18px;
+    }
+  }

@@ -1,0 +1,120 @@
+.Gallery-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 80px;
+    
+}
+
+.gallery-top{
+width: 600px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+line-height: 100px;
+}
+.gallery-top h1{
+     font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.gallery-top p{
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 30px;
+    
+}
+.gallery-bottom{
+width: 78%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 50px;
+height: auto;
+padding: 40px 0 30px;
+}
+.img1{
+    background-color: red;
+    background: url(https://i.pinimg.com/736x/7b/87/3c/7b873c19619e286837c9d267da3aa15b.jpg);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#box2{
+background: url(https://i.pinimg.com/736x/bd/fe/f7/bdfef7a501a4218968d42b7d320b7761.jpg);
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#box3{
+background: url(https://i.pinimg.com/736x/c3/a7/af/c3a7af11166a1249024bcc24041a2d4e.jpg);
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box4{
+background: url(https://i.pinimg.com/1200x/7f/08/89/7f0889be52f2e3f38a13c2e68a31b49f.jpg);
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box5{
+background: url(https://i.pinimg.com/1200x/cb/5a/20/cb5a200946fb6fc68725ab29ef1dab57.jpg);
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box6{
+background: url(https://i.pinimg.com/736x/58/1b/b5/581bb5f35b49d581ee73dba3362e06fe.jpg);
+ background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1200px) {
+    .gallery-bottom{
+        gap: 30px;
+    }
+    .img1{
+        height: 400px;
+        height: 500px;
+    }
+}
+
+@media (max-width:768px) {
+.Gallery-main{
+    padding: 40px 20px;
+}
+.gallery-top h1{
+    font-size:34px ;
+}
+.gallery-top p{
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 24px;
+}
+.gallery-bottom{
+    width: 100%;
+    gap: 20px;
+
+}
+.img1{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+}
+}
