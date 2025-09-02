@@ -1,9 +1,15 @@
 import React from "react";
 import "./achivement.css";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
 const Achivement = () => {
+    const { ref, inView } = useInView({ triggerOnce: true }); 
+
+
   const box = [
     {
-      number: "5K",
+      number: "5000",
       position: "Sudent",
     },
     {
@@ -21,10 +27,16 @@ const Achivement = () => {
   ];
 
   return (
-    <div className="achivement-main">
+    <div className="achivement-main" ref={ref}>
       {box.map((item, index) => (
         <div className="box1" key={index}>
-          <h1>{item.number}</h1>
+           <h1>
+            {inView ? (
+              <CountUp end={item.number} duration={2} separator="," />
+            ) : (
+              "0"
+            )}
+          </h1>
           <h2>{item.position}</h2>
         </div>
       ))}
